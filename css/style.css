@@ -1,0 +1,83 @@
+@import url("reset.css")
+@import url("global-forms.css")
+
+/*Almennt*/
+body {
+	background: #F5F4EF url('../images/bg.png');
+	color: #000305; /*font litur*/
+	font-size: 87.5%; /*87 % stærð af fonti úr reset skjalinu.*/
+	font-family:'Trebucher MS', Trebuchet, 'Lucinda Sans Unicode', 'Lucinda Sans Unicode', 'Lucinda Grande', 'Lucinda sans', Arial, sans-serif; 
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+/*headings*/
+h2 { font-size: 1.571em } /*22px*/
+h3 { font-size: 1.429em } /*20px*/
+h4 { font-size: 1.286em } /*18px*/
+h5 { font-size: 1.143em } /*16px*/
+h6 { font-size: 1em } /*14px*/
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400; /*400 er normal, 700 er bold*/
+	line-height: 1.1;
+	margin-bottom: .8em
+}
+
+/*linkar*/
+a{outline: 0;}
+	a img{ border: 0; text-decoration: non;}
+	a:link, a:visited{
+		color: #fff;
+		background-color: #036;
+		padding: 0 1px;
+		text-decoration: underline;
+	}
+	a:hover, a:active{
+		background-color: #fff;
+		color:#036;
+		text-decoration: none;
+		text-shadow: 1px 1px 1px #fff; /* indregin x ás, indregin y ás, blurrið, litur*/
+	}
+
+/*class body*/
+.body {
+	clear: both;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*id banner - Hausinn*/
+#banner {
+	margin:0 auto; /*top/bottom right/left*/
+	padding: .1em 0 0 0; /*top right bottom left*/
+}
+	#banner h1 {
+		font-size: 3.751em;
+		line-height: .6;
+	}
+	#banner img {
+		width: 40px; 
+		height: 40px; 
+		padding: 1em 0 1em 2em;
+		float: left;
+	}
+	#banner h1 a:link, #banner h1 a:visited { 
+		background: none;
+		color: #FF0000;
+		display: block;
+		font-weight: bold; 
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		width: 427px;
+	}
+	#banner h1 a:hover, #banner h1 a:active{
+		background: none;
+		color: #036; /* þýðir #003366*/
+		text-shadow: none;
+	}
+	#banner h1 strong {
+		font-size: 0.36em;
+		font-weight: normal;
+	}
